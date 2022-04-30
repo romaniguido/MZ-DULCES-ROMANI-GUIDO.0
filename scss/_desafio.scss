@@ -1,0 +1,83 @@
+/*Aplicacion mapa*/
+$mapaCuadros: ( 
+        cuadrorojo: rgb(239, 190, 190),
+        cuadroazul:  rgb(172, 172, 231),
+        cuadroamarillo: rgb(204, 204, 147)
+); 
+
+
+@each $nombre, $color in $mapaCuadros {
+    .MapaBoton-#{$nombre} {
+        background-color: $color;
+        border: $color;
+    }
+ }
+
+ 
+/*Aplicacion mapa-get*/
+
+ $estilos: (
+  color: rgb(144, 215, 168),
+  centro: center,
+  tFuente: 40px,
+  1rem : 1rem,
+  margen: 0,
+  abajo: 10px,
+  topo: 10px,
+  borde: 2%
+  
+);
+
+
+.MapaGetCuadro4 {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    padding: map-get($estilos, 1rem);
+    font-size:map-get($estilos, tFuente);
+    margin: map-get($estilos, margen);
+    border: map-get($estilos, borde);
+    margin-top: map-get($estilos, topo);
+    margin-bottom: map-get($estilos, borde);
+
+
+  }
+  
+
+   
+/*Aplicacion Extend*/
+
+.recuadro {
+	width:300px;
+	height:10px;
+	background-color:rgb(128, 27, 27);
+	text-align:center;
+	color:black;
+	border-radius:10px;
+	border:3px solid black;
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+
+.extend-recuadro-s{
+	@extend .recuadro;
+	height:50px;
+	color:rgb(203, 203, 203);
+}
+   
+/*Aplicacion Mixin*/
+
+@mixin mixeando($width, $height,$color,$border,$abajo,$tamanio,$porcentaje) {
+    height: $height;
+    width: $width;
+    color:$color;
+    border:$border;
+    margin-bottom: $abajo;
+    font-size: $tamanio;
+    margin-left: $porcentaje
+
+
+ }
+ .mixer {
+    @include mixeando(500px, 80px,blue,3px,7px,50px,20%);
+ }
+ 

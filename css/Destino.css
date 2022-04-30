@@ -289,4 +289,61 @@ footer a:hover {
   margin-top: 7%;
 }
 
+/*Aplicacion mapa*/
+.MapaBoton-cuadrorojo {
+  background-color: rgb(239, 190, 190);
+  border: rgb(239, 190, 190);
+}
+
+.MapaBoton-cuadroazul {
+  background-color: rgb(172, 172, 231);
+  border: rgb(172, 172, 231);
+}
+
+.MapaBoton-cuadroamarillo {
+  background-color: rgb(204, 204, 147);
+  border: rgb(204, 204, 147);
+}
+
+/*Aplicacion mapa-get*/
+.MapaGetCuadro4 {
+  background-color: rgb(144, 215, 168);
+  text-align: center;
+  padding: 1rem;
+  font-size: 40px;
+  margin: 0;
+  border: 2%;
+  margin-top: 10px;
+  margin-bottom: 2%;
+}
+
+/*Aplicacion Extend*/
+.recuadro, .extend-recuadro-s {
+  width: 300px;
+  height: 10px;
+  background-color: rgb(128, 27, 27);
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+  border: 3px solid black;
+  margin-bottom: 1%;
+  margin-left: 2%;
+}
+
+.extend-recuadro-s {
+  height: 50px;
+  color: rgb(203, 203, 203);
+}
+
+/*Aplicacion Mixin*/
+.mixer {
+  height: 80px;
+  width: 500px;
+  color: blue;
+  border: 3px;
+  margin-bottom: 7px;
+  font-size: 50px;
+  margin-left: 20%;
+}
+
 /*# sourceMappingURL=destino.css.map */
